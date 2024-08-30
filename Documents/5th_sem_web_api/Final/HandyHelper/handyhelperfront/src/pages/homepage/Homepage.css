@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  text-align: center;
+  padding: 0px 0; /* Reduced top and bottom padding */
+}
+
+.search-bar {
+  padding: 5px; /* Reduced padding inside the search bar */
+  margin: 10px auto; /* Adjusted margin to reduce spacing */
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 200, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.app-promotion,
+.projects {
+  margin: 10px 0; /* Reduced margin around sections */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px; /* Adjusted padding to reduce whitespace */
+}
+
+.header {
+  margin-bottom: 1px; /* Reduced margin between header and content */
+}
+
+.search-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.hire-pro, .find-customers {
+  margin: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hire-pro {
+  color: green;
+  font-weight: bold;
+}
+
+.find-customers {
+  color: gray;
+}
+
+.search-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  width: 50px; /* Set the width */
+  height: 50px; /* Set the height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-suggestions {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.search-suggestions a {
+  color: green;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.images .image,
+.images .illustration img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.app-promotion h2 {
+  margin-bottom: 10px;
+}
+
+.app-promotion a img {
+  width: 150px;
+  margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%; /* Make the container full-width on small screens */
+  }
+
+  .input-fields {
+    flex-direction: column; /* Stack the input fields vertically */
+    align-items: stretch; /* Stretch the input fields to full width */
+  }
+
+  .field {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add some spacing between input fields */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px; /* Set a maximum width for larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px; /* Increase the maximum width for larger screens */
+  }
+}
+
+/* Grid layout for services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+
+/* Individual service item styling */
+.service-item {
+  background-color: #f9f9f9; /* Optional: Add a background color */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.service-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.service-item p {
+  margin: 0;
+  color: #777;
+  font-size: 16px;
+}
+
+.project-grid,
+.wedding-gallery,
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project,
+.wedding-image,
+.service {
+  text-align: center;
+}
+
+.project img,
+.wedding-image img,
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.weddings-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.weddings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weddings-header a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+}
